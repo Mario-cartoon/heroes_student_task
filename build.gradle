@@ -1,0 +1,54 @@
+// plugins {
+//     id 'java'
+// }
+
+// group = 'com.yourcompany'
+// version = '1.0.0'
+
+// // Укажите версию Java ВНУТРИ блока java
+// java {
+//     sourceCompatibility = JavaVersion.VERSION_11
+//     targetCompatibility = JavaVersion.VERSION_11
+// }
+
+// repositories {
+//     mavenCentral()
+// }
+
+// dependencies {
+//     // Для старых версий Gradle используйте compile вместо implementation
+//     // implementation files('libs/heroes_task_lib-1.0-SNAPSHOT.jar')
+//    implementation files('libs/heroes_task_lib-1.0-SNAPSHOT.jar')
+// }
+
+// jar {
+//     manifest {
+//         attributes 'Main-Class': 'com.yourcompany.Main'
+//     }
+// }
+
+plugins {
+    id 'java'
+}
+
+group = 'com.yourcompany'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation files('libs/heroes_task_lib-1.0-SNAPSHOT.jar')
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.yourcompany.Main'
+    }
+}
