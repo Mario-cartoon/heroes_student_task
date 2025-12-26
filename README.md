@@ -72,7 +72,7 @@ programs/
 | Метод                                                                                                                                | Описание                                                                              |
 | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
 | `List<Edge> getTargetPath(Unit attackUnit, Unit targetUnit, List<Unit> existingUnitList)`                                            | Основной метод. Возвращает путь в виде списка координат.                              |
-| `List<Edge> findPathAStar(int startX, int startY, int targetX, int targetY, List<Unit> obstacles, Unit attackUnit, Unit targetUnit)` | Реализация алгоритма A\* с 8-направленным движением и диагональной стоимостью (1.41). |
+| `List<Edge> findPathAStar(int startX, int startY, int targetX, int targetY, List<Unit> obstacles, Unit attackUnit, Unit targetUnit)` | Реализация алгоритма A\* с 8-направленным движением и диагональной стоимостью.Те  алгоритмалгоритм поиска по первому наилучшему совпадению на графе. |
 | `List<Edge> createSimplePath(int startX, int startY, int targetX, int targetY)`                                                      | Вспомогательный метод для построения прямого пути (без препятствий).                  |
 | `int getUnitCoordinate(Unit unit, String primaryFieldName, String secondaryFieldName)`                                               | Универсальный метод получения координаты юнита                                        |
 
